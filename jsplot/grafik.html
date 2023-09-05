@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
+<head>
+    <title>Veri Analizi</title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <head>
+      <script src="https://cdn.plot.ly/plotly-2.25.2.min.js" charset="utf-8"></script>
+</head>
+
+<style>
+
+  @font-face {
+            font-family: 'Poppins';
+            src: url('assets/Poppins-Regular.ttf') format('truetype');
+           
+        }
+  body,
+  html {
+    font-size: 25px;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #plot {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+  
+</style>
+</head>
+
+<body>
+
+
+<div id="plot">
+  <label for="fileInput" id="fileButton" class="btn btn-primary">Dosya Seçiniz</label>
+  <input type="file" id="fileInput" class="d-none">
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
